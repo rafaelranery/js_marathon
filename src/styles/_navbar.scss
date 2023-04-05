@@ -1,0 +1,74 @@
+.navbar {
+    color: $color-primary;
+    background-color: $color-background;
+
+    &__logo {
+        text-align: center;
+        cursor: pointer;
+    }
+
+    &__nav {
+        /* Bootstrap reset */
+        margin-bottom: 0;
+        padding-left: 0;
+        /*  */
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        transition: all 500ms ease-in-out;
+        
+        &--hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        &__item {
+
+            &__link {
+                font-size: 20px;
+                text-decoration: none;
+                color: $color-primary;
+                white-space: nowrap;
+
+                &::after {
+                    display: block;
+                    content: '';
+                    border-bottom: 3px solid $color-primary;
+                    box-shadow: 0 0 5px rgba( white, 0.8);
+                    transform: scaleX(0);
+                    transition: transform 150ms ease-in-out;
+    
+                }
+                &:hover::after {
+                    transform: scaleX(1);
+                }
+
+            }
+        }
+
+        
+    }
+
+    &__toggler {
+        margin: 0 auto;
+        display: flex;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        
+        &__icon {
+            transform: rotate(45deg);
+            transform: scaleX(1.2);
+            opacity: 0.8;
+            transition: opacity 125ms ease, transform 750ms ease;
+
+            &:hover {
+                opacity: 1;
+            }
+            
+            &--active {
+                transform: rotate(0deg);
+            }
+        }
+    }
+}
