@@ -1,12 +1,42 @@
 .navbar {
     color: $color-primary;
     background-color: $color-background;
+    position: relative;
 
     &__logo {
         text-align: center;
         cursor: pointer;
     }
 
+    @media (max-width: 768px) {
+        .col-7 { /* as dropdown */
+            display: inline-block;
+        }
+        &__nav { /* as dropdown-content */
+            display: block !important;
+            top: 56px;
+            left: 0;
+            position: absolute;
+            background-color: $color-background;
+            width: 100%;
+            border-radius: 0 0 8px 8px;
+            text-align: center;
+
+            &--hidden {
+                display: none;
+            }
+
+            &__item {
+                padding: 6px 0;
+                border-bottom: 1px solid darken($color-primary, 25%);
+                
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+
+        }
+    }
     &__nav {
         /* Bootstrap reset */
         margin-bottom: 0;
@@ -17,10 +47,12 @@
         gap: 2rem;
         transition: all 500ms ease-in-out;
         
+        
         &--hidden {
             opacity: 0;
             visibility: hidden;
         }
+
 
         &__item {
 
@@ -55,6 +87,8 @@
         background-color: transparent;
         outline: none;
         border: none;
+
+        
         
         &__icon {
             transform: rotate(45deg);
@@ -69,6 +103,10 @@
             &--active {
                 transform: rotate(0deg);
             }
+        }
+
+        @media (max-width: 768px) {
+            margin-right: 1rem;
         }
     }
 }
