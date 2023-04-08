@@ -1,3 +1,8 @@
+$color-background: #000000;
+$color-primary: #17B978;
+$color-background-btn: #F0FF42;
+$color-background-btn-hover: #68ff68;
+
 * {
     margin: 0;
     padding: 0;
@@ -5,5 +10,32 @@
     list-style: none;
 }
 
-$color-background: #000000;
-$color-primary: #17B978;
+.title {
+    font-size: 48px;
+
+    &--small {
+        font-size: 38px;
+    }
+}
+
+.text {
+    font-size: 18px;
+
+    &--small {
+        font-size: 14px;
+    }
+}
+
+.btn-primary {
+    margin: 0 auto;
+    border: darken($color-primary, 15%);
+    outline: $color-primary;
+    background-color: $color-background-btn;
+    color: $color-background;
+    font-weight: bold;
+
+    &:hover {
+        background-color: $color-background-btn-hover;
+        color: $color-background;
+    }
+}

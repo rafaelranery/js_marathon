@@ -1,0 +1,45 @@
+.alumni {
+    background-color: $color-background;
+    color: $color-primary;
+
+    .title {
+        margin: 32px 0 56px;
+        
+        
+    }
+
+    &__carousel{
+        &__card {
+            max-width: 400px;
+            margin: 0 32px;
+            border: 1px solid $color-background-btn-hover;
+            padding: 12px;
+            border-radius: 6px;
+
+            &__photo {
+                border-radius: 50%;
+            }
+
+            .row {
+                border-bottom: 2px solid $color-primary;
+                padding-bottom: 16px;
+            }
+
+            &__title {
+                span {
+                    margin-top: 8px;
+                    display: block;
+                    border-top: 1px solid darken($color-primary, 1.8);
+                }
+            }
+
+            &__testimony {
+                padding: 16px;
+            }
+
+            @media (max-width: 480px) {
+                margin: 0;
+            }
+        }
+    }
+}

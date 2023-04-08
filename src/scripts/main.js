@@ -1,9 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     /* Navbar Toggler */
-    const navbarTogglerBtn = document.querySelector('.navbar__toggler')
-    navbarTogglerBtn.addEventListener('click', () => {
-        document.querySelector('.navbar__nav').classList.toggle('navbar__nav--hidden')
-        document.querySelector('.navbar__toggler__icon').classList.toggle('navbar__toggler__icon--active')
+    $('.navbar__toggler').click(() => {
+        $('.navbar__nav').toggleClass('navbar__nav--hidden');
+        $('.navbar__toggler__icon').toggleClass('navbar__toggler__icon--active');
     })
+    /* END ///////////////// */
+    /* Button hero Background Animation */
+    $('#hero__btn').hover(function () {
+            // over
+            console.log(this);
+            $('.hero__right-img-bg').toggleClass('hero__right-img-bg--zoom')
+
+        }, function () {
+            // out
+            $('.hero__right-img-bg').toggleClass('hero__right-img-bg--zoom')
+
+        }
+    );
+    /* END ////////////////// */
+    
 })

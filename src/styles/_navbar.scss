@@ -1,7 +1,9 @@
 .navbar {
     color: $color-primary;
-    background-color: $color-background;
-    position: relative;
+    background-image: linear-gradient(to bottom, $color-background 95%, $color-primary);
+    position: sticky;
+    z-index: 1;
+    top: 0;
 
     &__logo {
         text-align: center;
