@@ -1,7 +1,6 @@
 .modules {
     background-color: $color-background;
     color: $color-primary;
-    padding: 32px 0;
 
     .row {
         align-items: center;
@@ -27,11 +26,16 @@
             margin: 12px 0;
     
             .accordion-button {
-                background-color: lighten($color-background, 30%);
-                color: $color-background-btn-hover;
+                background-color: lighten($color-primary, 30%);
+                color: $color-background;
                 box-shadow: none;
                 &:focus {
+                    z-index: 0;
                     box-shadow: none;
+                }
+
+                &::after {
+                    background-image: url(../assets/chevron-down.svg);
                 }
             }
         }

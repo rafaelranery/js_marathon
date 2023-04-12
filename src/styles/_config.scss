@@ -1,5 +1,5 @@
-$color-background: #000000;
-$color-primary: #17B978;
+$color-background: #fff;
+$color-primary: #000;
 $color-background-btn: #F0FF42;
 $color-background-btn-hover: #68ff68;
 $font-title: 'Orbitron', sans-serif;
@@ -11,6 +11,10 @@ $font-text: 'Play', sans-serif;
     box-sizing: border-box;
     list-style: none;
     font-family: $font-text;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 .title {
@@ -45,5 +49,16 @@ $font-text: 'Play', sans-serif;
     &:hover {
         background-color: $color-background-btn-hover;
         color: $color-background;
+    }
+}
+
+body{
+    
+    &::-webkit-scrollbar {
+        background-color: $color-primary;
+        width: 3px;
+    } 
+    &::-webkit-scrollbar-thumb {
+        background-color: $color-background;
     }
 }

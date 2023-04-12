@@ -9,15 +9,19 @@ document.addEventListener('DOMContentLoaded', () => {
     /* Button hero Background Animation */
     $('#hero__btn').hover(function () {
             // over
-            console.log(this);
             $('.hero__right-img-bg').toggleClass('hero__right-img-bg--zoom')
+            $('.react-logo').toggleClass('react-logo--active')
 
         }, function () {
             // out
             $('.hero__right-img-bg').toggleClass('hero__right-img-bg--zoom')
 
+
         }
     );
     /* END ////////////////// */
     
+
+    /* Teachers Resume Reactivity */
+    $()
 })
