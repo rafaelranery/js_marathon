@@ -1,9 +1,10 @@
-.teachers * {
-    border: 1px dotted pink;
-}
-
 .teachers {
     background-color: $color-primary;
+    color: #fff;
+
+    .row {
+        align-items: center;
+    }
     
     
     &__card {
@@ -15,13 +16,54 @@
             margin-bottom: 12px;
         }
         
-        .text {
-            color: #fff;
-            font-size: 22px;
-
-            span {
-                font-size: 20px;
+        a {
+            color: $color-background-btn-hover;
+            .text {
+                font-size: 22px;
+    
+                span {
+                    font-size: 20px;
+                    white-space: nowrap;
+                    @media (max-width: 1024px) {
+                        font-size: 14px;
+                    }
+                }
             }
+        }
+    }
+
+    &__about {
+        order: -1;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        min-height: 400px;
+        border: 2px solid $color-background-btn-hover;
+        border-radius: 16px;
+        padding: 12px;
+        @media (max-width: 1024px) {
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .title {
+            margin-bottom: 24px;
+        }
+        ul {
+            padding: 0;
+            li {
+                margin-top: 12px;
+            }
+        }
+
+        .btn-close {
+            background-color: transparent;
+            color: red;
+            font-size: 2rem;
+            align-self: end;
+            margin: 0;
+            padding: 0;
         }
     }
 }
