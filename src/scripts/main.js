@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
             previous_jobs: ['Director of Web Development at a leading digital agency', 'Lead Instructor at a prominent coding bootcamp', 'Professor of Computer Science at a major university'],
         },
         {
-            name: "Professor James Brown",
+            name: "Professor Brown",
             description:
                 "With over a decade of experience teaching JavaScript to students of all levels, I'm passionate about helping others learn this essential language and develop the skills they need to succeed in today's tech-driven world. My teaching style emphasizes practical applications and real-world problem-solving, and I work closely with each of my students to help them achieve their unique learning goals. Whether you're looking to build a career in web development, software engineering, or another related field, I'm here to help you succeed.",
             previous_jobs: ['Senior Developer at a leading tech company', 'Lead Instructor at a top coding bootcamp', 'Professor of Computer Science at a major university'],
@@ -92,4 +92,30 @@ document.addEventListener("DOMContentLoaded", () => {
             $("#teacher-resume-container").prepend(DEFAULTRESUME)
         })
     });
+    /* END ||||||||||||||||||||||||| */
+    /* counter next event */
+    const eventDate = new Date("Jun 01, 2023 19:00:00")
+    const eventTimespamp = eventDate.getTime();
+
+    const counter = setInterval(() => {
+        const actualDate = new Date()
+        const actualTimestamp = actualDate.getTime();
+
+        const min = 1000 * 60;
+        const hour = min * 60;
+        const day = hour * 24;
+
+        const remainingMs = eventTimespamp - actualTimestamp;
+
+        let daysToEvent = Math.floor(remainingMs / day);
+        let hoursToEvent = Math.floor((remainingMs % day) / hour);
+        let minsToEvent = Math.floor(((remainingMs % day) % hour) / min);
+        let secsToEvent = Math.floor((((remainingMs % day) % hour) % min) / 1000);
+
+        $('#counter').html(`
+        ${daysToEvent} days ${hoursToEvent} hours ${minsToEvent} min e ${secsToEvent} sec
+        `)
+
+        
+    }, 1000);
 });
