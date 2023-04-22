@@ -1,0 +1,64 @@
+.footer {
+    background-color: lighten($color-primary, 35%);
+    padding: 32px 0 0;
+    color: darken($color-background, 15%);
+
+    .title--small {
+
+        span {
+            font-size: 12px;
+        }
+    }
+    a{
+        color: darken($color-background, 15%);
+        margin-bottom: 8px;
+        
+        &:hover {
+            color: darken($color-background, 25%);
+            
+        }
+    }
+
+    &__contact-form {
+        display: flex;
+        flex-direction: column;
+
+        .input--group {
+            margin-bottom: 12px;
+            
+            input, textarea { 
+                display: block;
+                width: 100%;
+                border: none;
+                outline: none;
+                box-shadow: 0 0 2px $color-primary;
+                padding: 2px 6px;
+                border-radius: 6px;
+                resize: none;
+            }
+
+        }
+        .btn--send {
+            background-color: $color-background-btn-hover;
+        }
+    }
+
+    &__meta {
+        background-color: $color-primary;
+        margin-top: 32px;
+        padding: 12px 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+        img {
+            margin-left: 12px;
+            width: 22px;
+        }
+
+        p {
+            display: inline-flex;
+        }
+    }
+}

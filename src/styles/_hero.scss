@@ -1,6 +1,7 @@
 .hero {
     background-color: $color-background;
     color: $color-primary;
+    padding-top: 0;
     
     .row {
         overflow: hidden;
@@ -23,7 +24,7 @@
         box-shadow: 0 0 5px lighten($color-primary, 5%);
         max-width: 500px;
         border-radius: 28px;
-        padding: 32px;
+        padding: 16px;
         margin: 10px 0;
         &__icons {
             max-width: 70%;
