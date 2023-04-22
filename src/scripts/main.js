@@ -116,6 +116,19 @@ document.addEventListener("DOMContentLoaded", () => {
         ${daysToEvent} days ${hoursToEvent} hours ${minsToEvent} min e ${secsToEvent} sec
         `)
 
-        
+
     }, 1000);
+    /* END ||||||||||||||||||||||||| */
+
+    /* NAVBAR SCROLL SHOW ANIMATION */
+    const heroHeight = $('.hero').height();
+    document.addEventListener('scroll', () => {
+        if ($(window).scrollTop() > heroHeight) {
+            $('.navbar').addClass('navbar--hidden');
+            $('.home-return-btn').addClass('home-return-btn--show')
+        } else {
+            $('.navbar').removeClass('navbar--hidden');
+            $('.home-return-btn').removeClass('home-return-btn--show')
+        }
+    })
 });

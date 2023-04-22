@@ -11,3 +11,29 @@
 section {
     padding: 64px 0;
 }
+
+.home-return-btn {
+    background-color: $color-primary;
+    padding: 12px;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 10px;
+    left: 4px;
+    transition: all ease .5s;
+    visibility: hidden;
+
+    &--show {
+        visibility: visible;
+    }
+    
+    img {
+        transform: rotate(180deg);
+        width: 24px;
+        height: 24px;
+    }
+
+    &:hover {
+        bottom: 12px;
+        background-color: lighten($color-primary, 25%);
+    }
+}

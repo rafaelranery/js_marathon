@@ -5,6 +5,10 @@
     z-index: 1;
     top: 0;
 
+    opacity: 1;
+    transition: all ease 0.75s;
+
+
     h1 {
         margin-bottom: 0;
     }
@@ -113,5 +117,11 @@
         @media (max-width: 768px) {
             margin-right: 1rem;
         }
+    }
+
+    &--hidden {
+        visibility: hidden;
+        opacity: 0;
+        transition: all ease 0.75s;
     }
 }
