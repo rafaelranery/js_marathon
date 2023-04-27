@@ -40,6 +40,11 @@
         }
         .btn--send {
             background-color: $color-background-btn-hover;
+
+            &:hover {
+                background-color: $color-primary;
+                color: $color-background;
+            }
         }
     }
 
@@ -51,6 +56,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        & > div {
+            display: flex;
+            align-items: flex-start;
+            gap: 4px;
+        }
         
 
         img {
@@ -59,7 +70,15 @@
         }
 
         p {
-            display: inline-flex;
+            display: inline-block;
+        }
+
+        @media (max-width: 600px) {
+            div {
+                align-items: flex-start;
+            }
+            display: block;
+            text-align: center;
         }
     }
 }

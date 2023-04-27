@@ -86,7 +86,7 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -119,7 +119,7 @@
                 </div>
             </div>
         </section>
-        <section class="alumni">
+        <section class="alumni" id="alumni">
             <div class="container">
                 <div class="row">
                     <h2 class="title">Meet our alumni:</h2>
@@ -249,7 +249,7 @@
                     </ul>
                 </div>
         </section>
-        <section class="modules">
+        <section class="modules" id="modules">
             <div class="container">
                 <div class="row">
                     <div class="modules__about col-md-6">
@@ -367,14 +367,15 @@
                 </div>
             </div>
         </section>
-        <section class="teachers">
+        <section class="teachers" id="teachers">
             <div class="container">
+                <h2 class="title">Meet our teachers:</h2>
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="row">
                             <div class="teachers__card col-lg-6 col-sm-3 col-6">
                                 <a id="teacher-resume-1" class="teacher-resume-trigger" name="0" href="">
-                                    <img id="teacher-resume-1" src="assets/gutprofilepic.jpeg"
+                                    <img id="teacher-resume-1" src="assets/avatars/a2.svg"
                                         class="teachers__card__profile-pic d-block w-75 mx-auto" alt="">
                                     <p id="teacher-resume-1" class="text">Thomas Lee
                                         <span id="teacher-resume-1" class="d-block">
@@ -385,7 +386,7 @@
                             </div>
                             <div class="teachers__card col-lg-6 col-sm-3 col-6">
                                 <a id="teacher-resume-2" class="teacher-resume-trigger" name="1" href="">
-                                    <img id="teacher-resume-2" src="assets/gutprofilepic.jpeg"
+                                    <img id="teacher-resume-2" src="assets/avatars/a1.svg"
                                         class="teachers__card__profile-pic d-block w-75 mx-auto" alt="">
                                     <p id="teacher-resume-2" class="text">Amanda Chen
                                         <span id="teacher-resume-2" class="d-block">
@@ -396,7 +397,7 @@
                             </div>
                             <div class="teachers__card col-lg-6 col-sm-3 col-6">
                                 <a id="teacher-resume-3" class="teacher-resume-trigger" name="2" href="">
-                                    <img id="teacher-resume-3" src="assets/gutprofilepic.jpeg"
+                                    <img id="teacher-resume-3" src="assets/avatars/a5.svg"
                                         class="teachers__card__profile-pic d-block w-75 mx-auto" alt="">
                                     <p id="teacher-resume-3" class="text">Jane Kim
                                         <span id="teacher-resume-3" class="d-block">
@@ -407,7 +408,7 @@
                             </div>
                             <div class="teachers__card col-lg-6 col-sm-3 col-6">
                                 <a id="teacher-resume-4" class="teacher-resume-trigger" name="3" href="">
-                                    <img id="teacher-resume-4" src="assets/gutprofilepic.jpeg"
+                                    <img id="teacher-resume-4" src="assets/avatars/a3.svg"
                                         class="teachers__card__profile-pic d-block w-75 mx-auto" alt="">
                                     <p id="teacher-resume-4" class="text">James Brown
                                         <span id="teacher-resume-4" class="d-block">
@@ -423,7 +424,7 @@
                 </div>
             </div>
         </section>
-        <section class="prices">
+        <section class="prices" id="prices">
             <div class="container">
                 <!-- <h2 class="title">Reserve your spot in the next marathon!</h2> -->
                 <div class="prices__countdown-container">
@@ -432,7 +433,7 @@
                     <div class="prices__countdown-container__packages">
                         <h3>Choose a Package that fits your needs:</h3>
                         <div class="row">
-                            <div class="prices__countdown-container__packages__package col-md-4">
+                            <div class="prices__countdown-container__packages__package col-sm-5 col-lg-3">
                                 <h4>Standart <br>Package
                                     <hr>
                                 </h4>
@@ -442,7 +443,7 @@
                                 </ul>
                                 <button class="btn">Subscribe</button>
                             </div>
-                            <div class="prices__countdown-container__packages__package col-md-4">
+                            <div class="prices__countdown-container__packages__package col-sm-5 col-lg-3">
                                 <h4>Premium <br>Package
                                     <hr>
                                     <span class="d-block text--small">*all of standart item, plus:</span>
@@ -463,25 +464,25 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <h2 class="title--small">LOGO <span>&copy; 2023</span></h2>
+                        <h2 class="title--small">JSchool <span>&copy; 2023</span></h2>
                         <ul class="footer__links">
                             <li>
-                                <a href="">
+                                <a href="#hero">
                                     Home
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="#modules">
                                     Modules
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="#teachers">
                                     Teachers
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="#prices">
                                     Packages and Price
                                 </a>
                             </li>
@@ -513,15 +514,19 @@
             <div class="footer__meta">
                 <div>
                     <img src="assets/github.svg" alt="Github icon">
-                    <a href="">
-                        Github Repository
+                    <a href="https://github.com/rafaelranery/js_marathon">
+                        Github
                     </a>
                     <img src="assets/linkedin.svg" alt="Linkedin icon">
-                    <a href="">
-                        Linkedin Profile
+                    <a href="https://www.linkedin.com/in/rafael-rapizo-nery-4434a0161/">
+                        Linkedin
+                    </a>
+                    <img src="assets/archive-icon.svg" alt="Portfolio icon">
+                    <a href="https://rafaelnery.vercel.app/">
+                        Portfolio
                     </a>
                 </div>
-                <p>&copy; 2023 - Rafael Nery - All rights reserved</p>
+                <p>&copy; 2023 Rafael Nery - All rights reserved</p>
             </div>
         </footer>
     </main>
