@@ -21,6 +21,9 @@
     <!-- Slick Plugin CSS -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!--  -->
+    <!-- Font Awesome for Hamburger Menus -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--  -->
     <link rel="stylesheet" href="styles/main.scss">
 </head>
 
@@ -30,11 +33,11 @@
     </a>
 
     <header class="navbar">
-        <div class="col-3">
-            <h1 class="navbar__logo">JSchool</h1>
-        </div>
-        <div class="col-7">
-            <ul class="navbar__nav">
+        <!-- <div class="col-3"> -->
+            <!-- <h1 class="navbar__logo">JSchool</h1> -->
+        <!-- </div> -->
+        <!-- <div class="col-7"> -->
+            <!-- <ul class="navbar__nav">
                 <li class="navbar__nav__item">
                     <a href="" class="navbar__nav__item__link">
                         Home
@@ -55,13 +58,31 @@
                         Booking and Price
                     </a>
                 </li>
-            </ul>
-        </div>
-        <div class="col-md-2">
+            </ul> -->
+            <nav class="navbar__nav" id="navbarHam">
+                <h1 class="navbar__logo">JSchool</h1>
+                <a href="#hero">
+                    Home
+                </a>
+                <a href="#modules">
+                    Modules
+                </a>
+                <a href="#teachers">
+                    Teachers
+                </a>
+                <a href="#prices">
+                    Packages and Prices
+                </a>
+                <a href="javascript:void(0);" class="icon" id="hamburger-icon">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        <!-- </div> -->
+        <!-- <div class="col-md-2">
             <button class="navbar__toggler">
                 <img class="navbar__toggler__icon" src="assets/menu-icon.svg">
             </button>
-        </div>
+        </div> -->
     </header>
 
     <main>

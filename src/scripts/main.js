@@ -131,4 +131,20 @@ document.addEventListener("DOMContentLoaded", () => {
             $('.home-return-btn').removeClass('home-return-btn--show')
         }
     })
+    /* END |||||||||||||||||||||||| */
+
+    /* HAMBURGER REPONSIVE TOPNAV */
+    $('#hamburger-icon').click(() => {
+        const nav = document.querySelector('#navbarHam')
+        /* if (nav.className === 'navbar__nav') {
+            nav.className += ' responsive';
+        } else {
+            nav.className = 'navbar__nav'
+        } */
+        if (!nav.classList.contains('responsive')) {
+            nav.classList.add('responsive')
+        } else {
+            nav.classList.remove('responsive')
+        }
+    })
 });
