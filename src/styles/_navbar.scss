@@ -136,9 +136,11 @@
     top: 0;
     z-index: 2;
 
-    &__nav {
-        width: 100%;
+    @media screen and (max-width: 600px) {
+        height: 99.200px;
+    }
 
+    &__nav {
         a {
             float: left;
             display: block;
